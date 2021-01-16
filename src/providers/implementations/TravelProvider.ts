@@ -16,7 +16,7 @@ class TravelProvider implements ITravelProvider{
     }
 
     async executeTravel(universePosition:SpacePoint): Promise<void> {
-        console.log("Verify Coordinates...");
+        console.log("Verifying Coordinates...");
         if(this.checkCoordinates(universePosition, this.universePosition)){
             this.consoleLogWithTimeOut("Checking Space Time..", 1500);
             this.consoleLogWithTimeOut("Checking Time Balance..", 3000);

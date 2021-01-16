@@ -5,11 +5,11 @@ import calculateSpaceTime from "./CalculateSpaceTime";
 
 const synchronizePulsars = (timeMachine:TimeMachine) => {
     
-    /**
-     * CALC
-     */
+    /**/
+    const syncPulsars = Math.sqrt( Math.pow(timeMachine.currentPosition.x, 2) + Math.pow(timeMachine.currentPosition.y, 2) + (Math.pow(timeMachine.currentPosition.z, 2)/calculateSpaceTime(timeMachine)) )
+    /**/
     
-    return 0;
+    return syncPulsars;
 }
 
 export default synchronizePulsars;
